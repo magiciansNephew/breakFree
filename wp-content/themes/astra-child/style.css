@@ -1,0 +1,349 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/* Page*/
+#page {
+	background-image: radial-gradient(circle farthest-corner at 100% 0%, #78C9FF 5%, rgba(107, 255, 235, 0.3) 30%);
+}
+
+.navigation.post-navigation {
+	display: none;
+}
+
+#main>article {
+	border-radius: 15px;
+}
+
+.ast-separate-container .ast-article-single {
+	padding: 30px;
+}
+
+.post-thumb-img-content.post-thumb img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+.entry-meta .author-name{
+	color: #3a3a3a;
+}
+
+.entry-title{
+	margin-bottom: 15px;
+}
+
+
+/* Headers and Navigation*/
+.main-navigation a.menu-link {
+	color: #3a3c3f;
+	padding: 0;
+	margin: 0 1em;
+	position: relative;
+	font-weight: 600;
+}
+
+.main-header-menu .menu-link:hover:after,
+.main-header-menu .menu-link[aria-current="page"]:after {
+	content: '';
+	position: absolute;
+	top: 80%;
+	width: 50%;
+	height: 3px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #618EE8;
+}
+
+#menu-item-439 a:after{
+	display: none;
+}
+
+.ast-header-break-point .main-header-menu {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.ast-mobile-header-wrap .ast-mobile-header-content {
+	background: transparent;
+}
+
+button.blue-button,
+.blue-button .elementor-button {
+	box-shadow: 0 5px 15px 0px #78C9FF;
+}
+
+/* Featured Article */
+.section-featured-article {
+	background-image: radial-gradient(circle closest-side at 10% 50%, #78C9FF, transparent);
+}
+
+.featured-article h1.title {
+	color: #6B75FF;
+}
+
+.featured-article {
+	display: flex;
+	margin-bottom: 25px;
+	justify-content: space-between;
+}
+
+.featured-article .title {
+	font-weight: bold;
+	font-size: 44px;
+}
+
+.featured-article .img-box {
+	flex: 2 1 0;
+}
+
+.featured-article .details {
+	flex: 1 1 0;
+}
+
+.featured-article .img-box img {
+	width: 100%;
+	object-fit: contain;
+	height: 400px;
+}
+
+.author {
+	margin-bottom: 15px;
+}
+
+.elementor img.avatar, img.avatar {
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* Latest Articles (Home) */
+.latest-articles-wrap-home .elementor-shortcode {
+	display: flex;
+	gap: 25px;
+}
+
+.ast-single-post .entry-content a.post-wrap {
+	color: inherit;
+	text-decoration: none;
+	background: white;
+	border-radius: 15px;
+}
+
+.latest-articles-wrap-home .post-wrap {
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+	flex: 1 1 0;
+}
+
+.latest-articles-wrap-home .post-wrap .img-box img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.latest-articles-wrap-home .post-wrap:hover {
+	transform: translateY(-10px);
+}
+
+.entry-content .post-wrap .details .excerpt p{
+	margin-bottom: 0;
+}
+
+.post-wrap .details {
+	padding: 15px;
+}
+
+.latest-articles-wrap-home .post-wrap h5.title {
+	margin-bottom: 10px;
+}
+
+.entry-content .latest-articles-wrap-home .details p {
+	margin-bottom: 0;
+}
+
+/*Post List styles */
+
+.posts-list-wrap .post-wrap {
+	display: flex;
+	margin-bottom: 35px;
+}
+
+.posts-list-wrap .post-wrap:hover {
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.posts-list-wrap .post-wrap .img-box img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.posts-list-wrap .post-wrap .img-box {
+	flex: 1 1 0;
+}
+
+.posts-list-wrap .post-wrap .details {
+	flex: 1 1 0;
+}
+
+.posts-list-wrap .img-box img {
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+/* Featured Destination Wrap */
+.featured-destination {
+	display: flex;
+	gap: 25px;
+}
+
+.featured-destination .img-box {
+	flex: 1 1 0;
+}
+
+.featured-destination .details {
+	flex: 1 1 0;
+}
+
+.featured-destination .img-box img {
+	height: 400px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Destinations list*/
+
+.destinations-list-home .elementor-shortcode {
+	display: flex;
+	gap: 25px;
+}
+
+.destinations-list-home .post-wrap .img-box img {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.destinations-list-home .post-wrap {
+	position: relative;
+	flex: 1 1 0;
+	color: inherit;
+}
+
+.destinations-list-home .post-wrap .excerpt {
+	display: none;
+}
+
+.destinations-list-home .post-wrap:hover {
+	transform: translateY(-10px);
+}
+
+.destinations-list-home .post-wrap .details {
+	background: white;
+	padding: 15px;
+	border-radius: 15px;
+	width: 90%;
+	position: absolute;
+	top: 87%;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0px 10px 10px 0px rgba(200, 200, 200, 0.2);
+}
+
+.destinations-list-home .post-wrap .details .excerpt p {
+	margin-bottom: 0;
+}
+
+h5.title {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+/*Footer */
+
+.logo-wrap {
+	margin-bottom: 10px;
+}
+
+.logo-wrap .logo {
+	width: 142px;
+}
+
+/* Responsive design */
+
+@media (max-width: 767px) {
+	.featured-article {
+		flex-direction: column-reverse;
+	}
+
+	.featured-article .img-box {
+		width: 100%;
+	}
+
+	.featured-article .details {
+		width: 100%;
+	}
+
+	.featured-article .img-box img {
+		height: 300px;
+	}
+
+	.destinations-list-home .elementor-shortcode {
+		flex-direction: column;
+	}
+	
+	.destinations-list-home .post-wrap {
+	  margin-bottom: 25px;
+  	}
+
+	.post-wrap .details {
+		top: 55%;
+	}
+
+	.latest-articles-wrap-home .elementor-shortcode {
+		flex-flow: column;
+	}
+
+	.featured-destination {
+		flex-direction: column;
+	}
+
+	.posts-list-wrap .post-wrap {
+		flex-direction: column;
+	}
+
+	.posts-list-wrap .img-box img {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	.posts-list-wrap .post-wrap .img-box img {
+		height: 200px;
+	}
+
+	.ast-separate-container .ast-article-single {
+		padding: 15px;
+	}
+
+	.post-thumb-img-content.post-thumb img {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+	}
+}
